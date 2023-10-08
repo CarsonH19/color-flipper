@@ -158,14 +158,14 @@ const span = document.querySelector('span');
 
 // Functions
 
-function hexNumberChange(colorName) {
+function colorNameChange(colorName) {
   span.textContent = colorName;
 }
 
 function changeColor() {
   const randomNumber = Math.floor(Math.random() * colors.length);
   console.log(colors[randomNumber]);
-  hexNumberChange(colors[randomNumber]);
+  colorNameChange(colors[randomNumber]);
   body.style.backgroundColor = colors[randomNumber];
 }
 
