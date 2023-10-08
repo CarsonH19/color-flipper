@@ -149,16 +149,26 @@ const colors = [
   "yellowgreen",
 ];
 
+// Variables
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 const body = document.querySelector('body');
+const span = document.querySelector('span');
 
 
+// Functions
+
+function hexNumberChange(colorName) {
+  span.textContent = colorName;
+}
 
 function changeColor() {
   const randomNumber = Math.floor(Math.random() * colors.length);
-  console.log(colors[randomNumber])
-  return body.style.backgroundColor = colors[randomNumber];
+  console.log(colors[randomNumber]);
+  hexNumberChange(colors[randomNumber]);
+  body.style.backgroundColor = colors[randomNumber];
 }
 
+
+// Event Listeners
 btn.addEventListener("click", changeColor);
