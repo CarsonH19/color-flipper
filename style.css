@@ -7,14 +7,13 @@ html {
 
 body {
   margin: 0px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
   height: 10vh;
   color: white;
   background-color: rgb(63, 63, 63);
-  border-bottom: 2px solid white;
 
 }
 
@@ -27,6 +26,7 @@ nav {
 
 h4 {
   font-size: 20px;
+  letter-spacing: 3px;
 }
 
 .nav-links {
@@ -35,8 +35,7 @@ h4 {
   gap: 100px;
 }
 
-
-a {
+li a {
   text-decoration: none;
   font-weight: bolder;
   color: white;
@@ -47,15 +46,16 @@ a {
   color: rgb(63, 63, 63);
   border: 2px solid white;
   border-radius: 5px;
+  letter-spacing: 3px;
 }
 
-a:hover {
+li a:hover {
   background-color: rgb(63, 63, 63);
   color: white;
 }
 
 main {
-  height: 92vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,21 +71,21 @@ main {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 250px;
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
-button {
+.btn-hero {
   width: 100px;
   height: 30px;
   font-size: 16px;
   font-weight: 700;
   background-color: white;
   color: rgb(63, 63, 63);
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 5px;
 }
 
-button:hover {
+.btn-hero:hover {
   background-color: rgb(63, 63, 63);
   color: white;
 }
